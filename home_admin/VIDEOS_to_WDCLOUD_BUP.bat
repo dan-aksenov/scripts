@@ -12,7 +12,7 @@ robocopy %src% %dst% *.* /s /purge /l /nfl /njh /ndl
 pause
 
 rem copy itself
-robocopy %src% %dst% *.* /unilog:%log%\video_to_mycloud.log /tee /z /purge /s
+robocopy %src% %dst% *.* /unilog:%log%\video_to_mycloud.log /tee /z /mir
  
 pause
 
@@ -23,6 +23,6 @@ robocopy %src% %dst% *.* /s /purge /l /nfl /njh /ndl
 pause
 
 rem copy itself
-robocopy %src% %dst% *.* /unilog:%log%\video_to_mycloud.log /tee /z /purge /s
+robocopy %src% %dst% *.* /unilog:%log%\video_to_mycloud.log  /tee /z /mir
  
 pause
