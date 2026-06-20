@@ -5,6 +5,17 @@ set src="F:\Users\danila\Videos"
 
 IF NOT EXIST %log% MD %log%
 
+set dst="D:\Users\danila\YandexDisk\!BUPS\videos"
+
+rem get difference
+robocopy %src% %dst% *.* /s /purge /l /nfl /njh /ndl
+pause
+
+rem copy itself
+robocopy %src% %dst% *.* /unilog:%log%\video_to_mycloud.log /tee /z /purge /s
+ 
+pause
+
 set dst="\\wdmycloud\danila\!BUPS\Videos"
 
 rem get difference
